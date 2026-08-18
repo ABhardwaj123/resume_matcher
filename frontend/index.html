@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 style="text-align: center;">Resume Matcher</h1>
+    <br>
+
+    <label for="resume">Upload Resume:</label>
+    <input type="file" id="resume">
+
+    <label for="jdText">Job Description:</label>
+    <textarea id="jdText" placeholder="Paste job description here..."></textarea>
+
+    <button id="submitBtn">Check Match</button>
+
+    <div id="results" style="display: none;">
+        <h3>Match Score: <span id="score"></span>%</h3>
+
+        <h4>Matched Skills</h4>
+        <ul id="matchedList"></ul>
+
+        <h4>Missing Skills</h4>
+        <ul id="missingList"></ul>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
